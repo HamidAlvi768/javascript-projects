@@ -1,0 +1,161 @@
+/* Base CSS Variables */
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --background: #ffffff;
+    --text: #212529;
+    --border: #dee2e6;
+    --hover: #0056b3;
+
+    /* Transition for theme changes */
+    --theme-transition: 0.3s ease-in-out;
+}
+
+/* System dark mode preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #375a7f;
+        --secondary: #444444;
+        --background: #222222;
+        --text: #ffffff;
+        --border: #444444;
+        --hover: #2b4764;
+    }
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color var(--theme-transition),
+                color var(--theme-transition),
+                border-color var(--theme-transition);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Theme Switcher Styles */
+.theme-switcher {
+    margin-bottom: 3rem;
+}
+
+.theme-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.theme-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--background);
+    cursor: pointer;
+    transition: all var(--theme-transition);
+}
+
+.theme-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.theme-button.active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.color-preview {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+/* Preview Content Styles */
+.preview-card {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    opacity: 0.9;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+#systemPreference {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

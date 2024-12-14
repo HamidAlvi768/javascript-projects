@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Shared Navbar CSS -->
+    <link rel="stylesheet" href="shared/navbar.css">
+    <style>
+        .project-card {
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Add margin-top to container to account for fixed navbar */
+        .container {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Main Content -->
+    <div class="container py-5">
+        <h1 class="text-center mb-5">JavaScript Projects Collection</h1>
+        <div class="projects-grid">
+            <!-- Color Changer -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">1. Color Changer</h5>
+                    <p class="card-text">Change background color with button clicks.</p>
+                    <a href="./1-colorChanger/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- BMI Calculator -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">2. BMI Calculator</h5>
+                    <p class="card-text">Calculate BMI based on height and weight.</p>
+                    <a href="./2-BMICalculator/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Digital Clock -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">3. Digital Clock</h5>
+                    <p class="card-text">Real-time digital clock display.</p>
+                    <a href="./3-DigitalClock/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Guess The Number -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">4. Guess The Number</h5>
+                    <p class="card-text">Number guessing game with hints.</p>
+                    <a href="./4-GuessTheNumber/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Keyboard -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">5. Keyboard</h5>
+                    <p class="card-text">Display keyboard event information.</p>
+                    <a href="./5-keyboard/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Unlimited Colors -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">6. Unlimited Colors</h5>
+                    <p class="card-text">Generate random background colors.</p>
+                    <a href="./6-unlimitedColors/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Scroll Progress -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">7. Scroll Progress</h5>
+                    <p class="card-text">Show scroll progress indicator.</p>
+                    <a href="./7-scroll/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Typer -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">8. Typer</h5>
+                    <p class="card-text">Text typing animation effect.</p>
+                    <a href="./8-typer/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Mouse Circle -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">9. Mouse Circle</h5>
+                    <p class="card-text">Circle following mouse cursor.</p>
+                    <a href="./9-mouseCircle/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Emoji -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">10. Emoji</h5>
+                    <p class="card-text">Random emoji generator with effects.</p>
+                    <a href="./10-emoji/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Text Editor -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">11. Text Editor</h5>
+                    <p class="card-text">Simple text formatting tool.</p>
+                    <a href="./11-textEditor/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Random Image -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">12. Random Image</h5>
+                    <p class="card-text">Display random images from API.</p>
+                    <a href="./12-randomImage/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Chuck Norris Jokes -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">13. Chuck Norris Jokes</h5>
+                    <p class="card-text">Random Chuck Norris jokes generator.</p>
+                    <a href="./13-jokes/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Random Cats -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">14. Random Cats</h5>
+                    <p class="card-text">Display random cat images.</p>
+                    <a href="./14-cats/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- Book List -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">15. Book List (CRUD)</h5>
+                    <p class="card-text">Book management with CRUD operations.</p>
+                    <a href="./15-crudDom/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <!-- GitHub User Search -->
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">16. GitHub User Search</h5>
+                    <p class="card-text">Search GitHub users with debouncing.</p>
+                    <a href="./16-debounce/index.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Shared Navbar JS -->
+    <script src="shared/navbar.js"></script>
+</body>
+</html>

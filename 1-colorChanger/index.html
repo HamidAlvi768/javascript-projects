@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Theme Switcher</h1>
+        <p>Select a theme to customize the website's appearance</p>
+      </header>
+
+      <main>
+        <div class="theme-switcher">
+          <div class="theme-options" id="themeOptions">
+            <!-- Theme buttons will be dynamically added here -->
+          </div>
+        </div>
+
+        <div class="content-preview">
+          <div class="preview-card">
+            <h2>Preview Content</h2>
+            <p>This is a sample text to preview the selected theme. The colors will update automatically when you select different themes.</p>
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-secondary">Secondary Button</button>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>System preference: <span id="systemPreference">Checking...</span></p>
+        <button id="resetTheme" class="btn-secondary">Reset to System Default</button>
+      </footer>
+    </div>
+
+    <script src="themes.js" type="module"></script>
+    <script src="chaiaurcode.js" type="module"></script>
+  </body>
+</html>
